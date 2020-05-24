@@ -65,10 +65,10 @@ html, body {
 </css-doodle>
 <css-doodle>
   :doodle {
-    @grid: 4 / 65vh; 
+    @grid: 6 / 65vh; 
     @shape:heart;
     width:60%;
-    height:40%;
+    height:35%;
     align-items:center;
     justify-content:center;
     animation-name: heartbeat;
@@ -89,6 +89,7 @@ html, body {
         hotpink,
         orangered
     );
+    filter:(200px);
   }
 
   @keyframes heartbeat {
@@ -103,7 +104,7 @@ html, body {
   dsplay:flex;
 
   :after{
-    content:@pick(玲子快乐,爱你,"");
+    content:@pick(玲子,玲子,玲子,梦里有你,想你了,我的天使,只喜欢你,偏爱你,12年的牵挂,"");
     font-size:0.5em;
     text-align:center;
     color:#e0cdcf;
@@ -115,7 +116,7 @@ html, body {
 
   @size: 15vmin;
   @shape: heart;
-  @place-cell: @rand(0%,100%) 0%;
+  @place-cell: @rand(0%,100%) 20%;
 
   animation-name: explosion;
   animation-iteration-count: infinite;
@@ -127,7 +128,7 @@ html, body {
   @keyframes explosion {
     0% { opacity: 0; }
     50% { opacity: 1; }
-    100% { transform: translate(@rand(-5vw, 5vw),@rand(15vh, 95vh)); opacity: 0;}
+    100% { transform: translate(@rand(-5vw, 5vw),@rand(10vh, 40vh)); opacity: 0;}
   }
 </css-doodle>
 
