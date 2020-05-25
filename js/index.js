@@ -860,3 +860,8 @@ $(function() {
 		}
 	}
 })
+setTimeout(
+	()=>{
+		document.querySelector(".bless").style.opacity = 1;
+	},5000
+);
