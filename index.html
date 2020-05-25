@@ -1,138 +1,56 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title></title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<style>
-html, body { 
-  width: 100%;
-  height: 100%; 
-  background: #3d2152; 
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>
 
+<head>
+    <title>一封告白</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script src="js/EventEmitter.js"></script>
 </head>
+
+
 <body>
 
-<script src="js/css-doodle.min.js"></script>
-<css-doodle>
-  :doodle {
-    @grid: 7 / 100%; 
-    position:absolute;
-  }
-  background: @pick(
-    orangered,
-    orange,
-    gold,
-    lightgreen,
-    cyan,
-    dodgerblue,
-    mediumpurple,
-    hotpink,
-    orangered
-  );
-  dsplay:flex;
 
-  transform: scale(1,1);
+    <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+        <div class="body_left">
+            <img src="img/biubiubiu.gif" alt="" ondragstart='return false;'>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <div class="border">
+            <div class="border-top"></div>
+        </div>
+        <div class="copyright">
+            <div id="During"><span>During:</span>&nbsp;2020</div>
+            <div id="author"><span>&copy;&nbsp;</span>测试</div>
+        </div>
+    </div> -->
+    <!-- 百度 -->
+    <div id="liker">
+        <div class="search">
+            <img src="img/bd_logo1.png" alt="百度一下" class="s-logo">
+            <div style="display: flex;width: 80%;text-align: center;margin: auto;">
+                <input type="text" class="s-baidu" name="wd" value="最漂亮，最温柔，最善良的女孩">
+                <button class="btn" >百度一下</button>
+                <!-- <input type="submit" class="s-anniu" value="百度一下"> -->
+            </div>
+            <!-- <div class="camera"></div> -->
+        </div>
+        <canvas class="hearts-canvas" width="200" height="400"></canvas>
+    </div>
+    <!-- <div class="bglove">
+       <img src="img/photo.jpg" alt="是你，是你，就是你" class="photo">
+    </div> -->
+    
+    <script src="js/change.js"></script>
+    <!-- 北京爱心 -->
+    
+    <script>
+    	
 
-  @size: @rand(5,25)vmin;
-  @shape: heart;
-  @place-cell: @rand(0%,100%) @rand(0%,100%);
-
-  animation-name: heartbeat;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-duration: calc(@rand(2s, 5s));
-  animation-delay: calc(@rand(-5s, -1s));
-  animation-timing-function: ease;
-
-  @keyframes heartbeat {
-    0% { opacity: 0; transform:scale(1,1);}
-    50% { opacity: 1; transform:scale(1.3,1.3);}
-    100% { opacity: 0;transform:scale(1,1);}
-  }
-
-  @keyframes explosion {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: translate(@rand(-5vw, 5vw),@rand(15vh, 95vh)); opacity: 0;}
-  }
-</css-doodle>
-<css-doodle>
-  :doodle {
-    @grid: 6 / 65vh; 
-    @shape:heart;
-    width:60%;
-    height:35%;
-    align-items:center;
-    justify-content:center;
-    animation-name: heartbeat;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-duration: 2.5s;
-    animation-timing-function: ease;
-    transform:scale(1,1);
-    background-image: linear-gradient(
-        to right,
-        orangered,
-        orange,
-        gold,
-        lightgreen,
-        cyan,
-        dodgerblue,
-        mediumpurple,
-        hotpink,
-        orangered
-    );
-    filter:(200px);
-  }
-
-  @keyframes heartbeat {
-    0% { opacity: 0; transform:scale(1,1);}
-    50% { opacity: 1; transform:scale(1.3,1.3);}
-    100% { opacity: 0;transform:scale(1,1);}
-  }
-
-  background: @pick(
-    #ff0198, #8156a8, #ff6d00, #ff75e4
-  );
-  dsplay:flex;
-
-  :after{
-    content:@pick(玲子,玲子,玲子,梦里有你,想你了,我的天使,只喜欢你,偏爱你,12年的牵挂,"");
-    font-size:0.5em;
-    text-align:center;
-    color:#e0cdcf;
-    position:absolute;
-    top:35%;
-  }
-
-  transform: translate(0,0);
-
-  @size: 15vmin;
-  @shape: heart;
-  @place-cell: @rand(0%,100%) 20%;
-
-  animation-name: explosion;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-duration: calc(@rand(4s, 5s));
-  animation-delay: calc(@rand(-5s, -1s));
-  animation-timing-function: ease;
-
-  @keyframes explosion {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: translate(@rand(-5vw, 5vw),@rand(10vh, 40vh)); opacity: 0;}
-  }
-</css-doodle>
-
-
-
+    </script>
 </body>
+
 </html>
